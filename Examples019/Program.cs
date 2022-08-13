@@ -1,2 +1,15 @@
 ﻿// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Введите пятизначное число n");
+int n = int.Parse(Console.ReadLine());
+int A= n/10000;
+int B=n/1000%10;
+int C=n%100/10;
+int D=n%10;
+if (A==D && B==C)
+{
+    Console.WriteLine("Введенное число является полиндромом");
+}
+else
+{
+    Console.WriteLine("Введенное число не является полиндромом");
+}
